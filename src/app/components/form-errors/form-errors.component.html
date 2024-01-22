@@ -1,0 +1,10 @@
+@if(errors){
+    @if(errors.required){
+      <span>El campo es requerido</span>
+      } @else if(errors.minlength){
+      <span
+        >El campo debería tener mínimo {{ errors.minlength.requiredLength }}.
+        Actualmente tiene {{ errors.minlength.actualLength }}</span
+      >
+    }
+  }
