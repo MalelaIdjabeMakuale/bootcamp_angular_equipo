@@ -1,0 +1,28 @@
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    margin-top: 50vh;
+  }
+  
+  .sigue, .rrss, .copy {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+  }
+  
+  .rrss ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .rrss li {
+    margin-right: 10px;
+  }
+  
+  .rrss a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
