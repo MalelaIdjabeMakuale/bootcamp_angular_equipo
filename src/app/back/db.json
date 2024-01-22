@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Camiseta Puma",
+      "price": 19.99,
+      "size": "S",
+      "color": "Rojo",
+      "material": "Algodón",
+      "image": "https://cdn.deporvillage.com/cdn-cgi/image/h=576,w=576,dpr=1,f=auto,q=75,fit=contain,background=white/product/pum-84877001_001.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Camiseta Adidas",
+      "price": 22.99,
+      "size": "M",
+      "color": "Azul",
+      "material": "Poliéster",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ563W3uLO4ORQ-LobuqG97pdZPXiqE16rm5iDpzJEwNUdSe9gQ4LsEmrf5twtATGJ9zYo&usqp=CAU"
+    },
+    {
+      "id": "3",
+      "name": "Sudadera Nike",
+      "price": 39.99,
+      "size": "L",
+      "color": "Negro",
+      "material": "Felpa",
+      "image": "https://contents.mediadecathlon.com/m7821580/k$1c5e38662435ea6e0056622db87bb060/sq/sudadera-nike-sportswear-club-fleece-negro-hombre.jpg?format=auto&f=800x0"
+    },
+    {
+      "id": "4",
+      "name": "Sudadera Adidas",
+      "price": 44.99,
+      "size": "XL",
+      "color": "Gris",
+      "material": "Algodón",
+      "image": "https://www.deportesmegra.com/2191314-large_default/sudaderas-adidas-trefoil-hoody.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Zapatos Pikolinos",
+      "price": 59.99,
+      "size": "US 8",
+      "color": "Blanco",
+      "material": "Cuero",
+      "image": "https://d3ncjv9rut9d5t.cloudfront.net/5323-large_default/pikolinos-zapato-hombre-santiago-m7b-m7b-4023-cuero-pik006.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Zapatos Fluchos",
+      "price": 64.99,
+      "size": "US 9",
+      "color": "Negro",
+      "material": "Malla y cuero",
+      "image": "https://mundotextil.com/tienda/61-large_default/zapato-fluchos-sin-cordones-8902.jpg"
+    }
+  ]
+}
