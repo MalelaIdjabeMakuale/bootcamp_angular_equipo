@@ -1,2 +1,44 @@
-<p>gestion-pages works!</p>
-<p>hola</p>
+<div class="todo">
+  <div class="titulo">
+    <h3>Creación/edición de productos</h3>
+  </div>
+  <div class="cuestionario">
+    <div>
+      <input
+        type="text"
+        placeholder="Nombre del producto"
+        [(ngModel)]="product.name"
+      />
+    </div>
+    <div>
+      <input type="text" placeholder="Precio" [(ngModel)]="product.price" />
+    </div>
+    <div>
+      <input
+        type="text"
+        placeholder="Descripción"
+        [(ngModel)]="product.description"
+      />
+    </div>
+    <div>
+      <input
+        type="text"
+        placeholder="Ruta de la imagen"
+        [(ngModel)]="product.image"
+      />
+    </div>
+    <div>
+      <input type="text" placeholder="Opiniones" />
+    </div>
+  </div>
+  <div class="boton">
+    <button (click)="addProducto()">Guardar</button>
+    <button (click)="deleteProducto()">Borrar</button>
+  </div>
+</div>
+<div class="pre">
+  <p>{{ product.name }}</p>
+  <p>{{ product.price }}</p>
+  <p>{{ product.description }}</p>
+  <img src="{{ product.image }}" alt="{{ product.name }}" />
+</div>
