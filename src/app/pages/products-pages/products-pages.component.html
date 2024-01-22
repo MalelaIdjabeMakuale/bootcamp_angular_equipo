@@ -1,1 +1,9 @@
-<p>products-pages works!</p>
+@for(product of productsList; track $index){
+<div>
+<p>{{product.name}}</p>
+<p>{{product.price}}</p>
+<p>{{product.size}}</p>
+<p>{{product.material}}</p>
+<img src="{{product.image}}" alt="{{product.name}}">
+<div>
+}
