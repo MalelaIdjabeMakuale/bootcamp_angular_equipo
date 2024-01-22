@@ -1,0 +1,7 @@
+div { display: flex;
+    align-items: center;
+    justify-content: center;
+margin-left: 6vh;
+font-family:"Bitter", serif;
+    img { height: 10vh;}
+}
