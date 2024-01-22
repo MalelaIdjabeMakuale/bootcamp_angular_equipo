@@ -1,0 +1,31 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+  <fieldset>
+    <legend>Datos</legend>
+    <label class="block">
+      Name
+      <input type="text" formControlName="name" />
+    </label>
+    <app-form-errors [errors]="isSubmitted && contactForm.get('name')?.errors"></app-form-errors>
+
+
+    <label class="block">
+      Email
+      <input type="email" formControlName="email" />
+    </label>
+    <app-form-errors [errors]="isSubmitted && contactForm.get('email')?.errors"></app-form-errors>
+
+
+    <label class="block">
+      Que info Necesitas
+      <select formControlName="info">
+        <option value="Camisetas">Camisetas</option>
+        <option value="Sudadera">Sudaderas</option>
+        <option value="Zapato">Zapatos</option>
+      </select>
+    </label>
+    <app-form-errors [errors]="isSubmitted && contactForm.get('info')?.errors"></app-form-errors>
+
+  </fieldset>
+
+  <button class="bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base">Enviar</button>
+</form>
