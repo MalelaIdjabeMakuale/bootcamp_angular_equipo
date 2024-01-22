@@ -1,0 +1,23 @@
+div {background-color: #FFC970;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+  img {height: 3vh;
+  margin-left: 1vh;}
+   
+    }
+  
+  
+    .navbar {list-style-type: none;
+      display: flex;
+  
+    }
+  
+    ul { 
+      list-style: none;
+     
+      a {color: #000000;
+      text-decoration: none;
+      font-family:"Bitter", serif;}
+    }
