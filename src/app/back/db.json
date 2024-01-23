@@ -145,24 +145,6 @@
       "image": "https://santacana.es/894-thickbox_default/gorro-de-lana-y-cashmere-st-lcg-20.jpg"
     },
     {
-      "id": "19",
-      "name": "Chaqueta Impermeable",
-      "price": 59.99,
-      "size": "XL",
-      "color": "Negro",
-      "material": "Nylon",
-      "image": "https://motoready.es/storage/2022/05/KTM-Chaqueta-impermeable-3PW2200033XX.jpg"
-    },
-    {
-      "id": "20",
-      "name": "Bañador Deportivo",
-      "price": 29.99,
-      "size": "L",
-      "color": "Verde",
-      "material": "Poliamida",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JlDN-mIC98VjiG0twNtx1d7VIXeAk4iOXw&usqp=CAU"
-    },
-    {
       "id": "5955",
       "name": "Air Jordan",
       "price": "123",
@@ -179,6 +161,24 @@
       "color": "Azul",
       "material": "Algodón",
       "image": "https://equipadosport.es/97-home_default/1-camiseta-oficial-supercopa-de-espana.jpg"
+    },
+    {
+      "id": "93d9",
+      "name": "Riñonera Uniqlo",
+      "price": "40",
+      "size": "Única",
+      "color": "Naranja",
+      "material": "Sintético",
+      "image": "https://cdna.lystit.com/photos/uniqlo/854931ac/uniqlo--Bolso-Pequeno-Redondo.jpeg"
+    },
+    {
+      "id": "74d1",
+      "name": "Sombrero de copa",
+      "price": "100",
+      "size": "Única",
+      "color": "Negro",
+      "material": "Sintético",
+      "image": "https://m.media-amazon.com/images/I/31oPleY7VIL._AC_UY1000_.jpg"
     }
   ]
 }

@@ -1,4 +1,4 @@
-
+<!-- 
 
 <div class="gestion">
 
@@ -99,7 +99,6 @@
           placeholder="Ruta de la imagen"
           [(ngModel)]="product.image"
           placeholder="Inserte ruta de la imagen"
-          autocomplete="new-password"
           class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
           required
         />
@@ -130,19 +129,109 @@
       <p>{{ product.material }}</p>
       <img src="{{ product.image }}" />
     </div> -->
-    <div class=" mt-0 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg md:mr-40 ml-auto">
-      <img class="h-48 w-full object-cover object-center" src="{{ product.image }}" alt="Product Image" />
-      <div class="p-4">
-        <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">{{ product.name }}</h2>
-        <p class="mb-2 text-base dark:text-gray-300 text-gray-700">Material: {{ product.material }}</p>
-        <p class="mb-2 text-base dark:text-gray-300 text-gray-700">Color: {{ product.color}}</p>
-        <div class="flex items-center">
-          <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white">{{ product.price }}€</p>
-          <p class="ml-auto text-base font-medium text-green-500">{{product.size}}</p>
-        </div>
+    
+
+
+<!-- 
+
+<div class="previa">
+  <div class=" mt-0 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg md:mr-40 ml-auto">
+    <img class="h-48 w-full object-cover object-center" src="{{ product.image }}" alt="Product Image" />
+    <div class="p-4">
+      <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">{{ product.name }}</h2>
+      <p class="mb-2 text-base dark:text-gray-300 text-gray-700">Material: {{ product.material }}</p>
+      <p class="mb-2 text-base dark:text-gray-300 text-gray-700">Color: {{ product.color}}</p>
+      <div class="flex items-center">
+        <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white">{{ product.price }}€</p>
+        <p class="ml-auto text-base font-medium text-green-500">{{product.size}}</p>
       </div>
     </div>
+  </div>
 
+</div>  -->
 
+<!-- 
+ESTILOS DEFINITIVOS -->
 
+<div class="flex">
+  <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden my-10">
+    <div class="px-4 py-2">
+      <input
+      type="text"
+      placeholder="Nombre del producto"
+      [(ngModel)]="product.name"
+      placeholder="Nombre del producto"
+      class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+      required
+    />
+    <input
+    type="text"
+    placeholder="Precio"
+    [(ngModel)]="product.price"
+    placeholder="€"
 
+    class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+    required
+  />
+  <input
+  type="text"
+  placeholder="Talla"
+  [(ngModel)]="product.size"
+  placeholder="Talla"
+  class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+  required
+/>
+<input
+type="text"
+[(ngModel)]="product.color"
+placeholder="Color"
+class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+required
+/>
+<input
+type="text"
+
+[(ngModel)]="product.material"
+placeholder="Material del producto"
+class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+required
+/>
+<input
+type="text"
+placeholder="Ruta de la imagen"
+[(ngModel)]="product.image"
+placeholder="Inserte ruta de la imagen"
+class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+required
+/>
+    </div>
+    <img class="h-56 w-full object-cover mt-2" src="{{product.image}}" alt="La imagen será previsualizada cuando se inserte la ruta">
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+     
+      <button (click)="addProducto()" class="px-3 py-1 bg-gray-200 text-sm text-gray-900 font-semibold rounded">Guardar</button>
+      
+
+    </div>
+  </div>
+  
+  <!-- vista previa -->
+  <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden my-10">
+    <div class="px-4 py-2">
+      <h1 class="text-gray-900 font-bold text-3xl uppercase">{{ product.name }}</h1>
+      <div>
+        <p class="text-gray-600 text-sm mt-1">{{ product.material }}</p>
+      </div>
+      <div>
+        <p class="text-gray-600 text-sm mt-1">{{ product.size }}</p>
+      </div>
+     <div><p class="text-gray-600 text-sm mt-1">{{ product.color }}</p></div>
+      <div> <p class="text-gray-600 text-sm mt-1">{{ product.price}}€</p></div>
+     
+    </div>
+    <img class="h-56 w-full object-cover mt-2" src="{{product.image}}" alt="La imagen será previsualizada cuando se inserte la ruta">
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+      
+    </div>
+</div>
+
+</div>
