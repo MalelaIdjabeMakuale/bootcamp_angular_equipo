@@ -6,9 +6,9 @@ import { Injectable } from '@angular/core';
 })
 export class ServiceService {
   public baseUrl:string="http://localhost:3000/products"
-  public productsUrl: string =`${this.baseUrl}/`
+  public productsUrl: string =`${this.baseUrl}`
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
   
   public getProducts(){
     return this.http.get(this.productsUrl)
@@ -17,9 +17,17 @@ export class ServiceService {
   public postProducto(product: any) {
     return this.http.post(this.productsUrl, product);
   }
+
   public deleteProducto(id: string) {
-    return this.http.delete(`${this.productsUrl}${id}`);
+    return this.http.delete(`${this.productsUrl}/${id}`);
+  }
 
+  public getProductosByiD(id: string) {
+    return this.http.get(`${this.productsUrl}/${id}`);
+  }
 
-}
+  public modificarProducto(id: string, product: any) {
+    return this.http.patch(`${this.productsUrl}/${id}`, product);
+  }
+
 }
