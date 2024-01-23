@@ -3,15 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-  .gestion {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .formulario {
-    flex: 1;
-  }
-
+.flex {
+    justify-content: space-evenly;
+    justify-items: center;
+}

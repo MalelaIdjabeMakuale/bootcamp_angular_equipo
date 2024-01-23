@@ -11,12 +11,12 @@
     },
     {
       "id": "4",
-      "name": "Sudadera Adidas",
-      "price": 44.99,
-      "size": "XL",
-      "color": "Gris",
-      "material": "Algodón",
-      "image": "https://www.deportesmegra.com/2191314-large_default/sudaderas-adidas-trefoil-hoody.jpg"
+      "name": "Camiseta Ensino ",
+      "price": "38,95",
+      "size": "M",
+      "color": "Rosa",
+      "material": "Sintética",
+      "image": "https://www.madbasket.com/8556-large_default/camiseta-liga-femenina-ensino-lugo-rosa.jpg"
     },
     {
       "id": "5",
@@ -145,25 +145,6 @@
       "image": "https://santacana.es/894-thickbox_default/gorro-de-lana-y-cashmere-st-lcg-20.jpg"
     },
     {
-      "id": "19",
-      "name": "Chaqueta Impermeable",
-      "price": 59.99,
-      "size": "XL",
-      "color": "Negro",
-      "material": "Nylon",
-      "image": "https://motoready.es/storage/2022/05/KTM-Chaqueta-impermeable-3PW2200033XX.jpg"
-    },
-    {
-      "id": "20",
-      "name": "Bañador Deportivo",
-      "price": 29.99,
-      "size": "L",
-      "color": "Verde",
-      "material": "Poliamida",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JlDN-mIC98VjiG0twNtx1d7VIXeAk4iOXw&usqp=CAU"
-    },
-    {
-
       "id": "5955",
       "name": "Air Jordan",
       "price": "123",
@@ -182,32 +163,22 @@
       "image": "https://equipadosport.es/97-home_default/1-camiseta-oficial-supercopa-de-espana.jpg"
     },
     {
-      "id": "702d",
-      "name": "Robotito",
-      "price": "90",
-      "size": "XL",
-      "color": "Azul",
-      "material": "Metal",
-      "image": "https://solectroshop.com/8277-large_default/tobbie-el-robot-montable-inteligente-ksr18-juguete-educativo.jpg"
+      "id": "93d9",
+      "name": "Riñonera Uniqlo",
+      "price": "40",
+      "size": "Única",
+      "color": "Naranja",
+      "material": "Sintético",
+      "image": "https://cdna.lystit.com/photos/uniqlo/854931ac/uniqlo--Bolso-Pequeno-Redondo.jpeg"
     },
     {
-      "id": "5caa",
-      "name": "Princess Carolyn",
-      "price": "45",
-      "size": "M",
-      "color": "rosa",
-      "material": "adfadsfad",
-      "image": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Princess-Carolyn.Bojack-Horseman.webp"
-
-      "id": "c935",
-      "name": "zapato fluchos",
-      "price": "20",
-      "size": "",
-      "color": "",
-      "material": "",
-      "image": "https://mundotextil.com/tienda/61-large_default/zapato-fluchos-sin-cordones-8902.jpg",
-      "description": "Cuero"
-
+      "id": "74d1",
+      "name": "Sombrero de copa",
+      "price": "100",
+      "size": "Única",
+      "color": "Negro",
+      "material": "Sintético",
+      "image": "https://m.media-amazon.com/images/I/31oPleY7VIL._AC_UY1000_.jpg"
     }
   ]
 }
