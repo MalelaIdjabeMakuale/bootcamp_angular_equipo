@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.bg-primary-color-grayish-blue {
+    background: hsl(217, 19%, 35%);
+}
+.bg-primary-color-blue {
+    background: hsl(217, 90%, 31%);
+}
+.bg-primary-color-white {
+    background: hsl(0, 0%, 100%);
+}
+
+.primary-color-blackish-blue {
+    color: rgb(25,33,46);
+}
+
+.primary-color-blackish-blue-opacity{
+    color: rgba(25,33,46,0.5);
+}
+
+.color-neutral-light-gray{
+    color: hsl(0, 0%, 81%);
+}
+
+.color-neutral-grayish-blue{
+    color: hsl(210, 46%, 95%);
+}
+
+body{
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+h1{
+font-weight: 600;
+}
+
+h2,p{
+font-weight: 500;
+}
