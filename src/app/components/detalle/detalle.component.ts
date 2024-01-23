@@ -11,10 +11,10 @@ import { ServiceService } from '../../services/service.service';
   templateUrl: './detalle.component.html',
   styleUrl: './detalle.component.css'
 })
-export class DetalleComponent {id!:number;
+export class DetalleComponent {id!:any;
   product!:Iproducts;
   constructor(
-    private servicio: ServiceService,
+   private servicio:ServiceService,
     private rutaActivada: ActivatedRoute
   ) {}
 
@@ -26,7 +26,12 @@ export class DetalleComponent {id!:number;
     
 
 
-    })
+    });
+
+    this.servicio.getProductosByiD(this.id).subscribe((data: any) => {
+      this.product = data;
+    });
+  }
 
   }
-}
+
