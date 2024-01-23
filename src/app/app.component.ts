@@ -5,11 +5,12 @@ import { FooterCoreComponent } from './core/footer-core/footer-core.component';
 import { HeaderCoreComponent } from './core/header-core/header-core.component';
 import { DetalleComponent } from './components/detalle/detalle.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule,FooterCoreComponent,HeaderCoreComponent, RouterOutlet, DetalleComponent, PaginationComponent],
+  imports: [CommonModule,FooterCoreComponent,HeaderCoreComponent, RouterOutlet, DetalleComponent, PaginationComponent, NgxPaginationModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

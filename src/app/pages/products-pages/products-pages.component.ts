@@ -1,17 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Iproducts } from '../../interfaces/iproducts';
 import { ServiceService } from '../../services/service.service';
 import { PaginationComponent } from '../../components/pagination/pagination.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @Component({
   selector: 'app-products-pages',
   standalone: true,
-  imports: [PaginationComponent],
+  imports: [PaginationComponent, NgxPaginationModule],
   templateUrl: './products-pages.component.html',
   styleUrl: './products-pages.component.css'
 })
 export class ProductsPagesComponent {
- public productsList:Iproducts [] = []
+ public productsList:Iproducts [] = [];
+ public currentPage = 1;
+  public itemsPerPage = 10;
 
 constructor(private servicio:ServiceService){}
 
