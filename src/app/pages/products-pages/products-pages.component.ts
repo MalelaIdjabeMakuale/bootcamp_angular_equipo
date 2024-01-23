@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Iproducts } from '../../interfaces/iproducts';
 import { ServiceService } from '../../services/service.service';
-import { PaginationComponent } from '../../components/pagination/pagination.component';
-import { NgxPaginationModule } from 'ngx-pagination';
+
 
 @Component({
   selector: 'app-products-pages',
   standalone: true,
-  imports: [PaginationComponent, NgxPaginationModule],
+  imports: [],
   templateUrl: './products-pages.component.html',
   styleUrl: './products-pages.component.css'
 })
