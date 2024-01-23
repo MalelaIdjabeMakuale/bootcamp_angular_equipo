@@ -1,0 +1,57 @@
+<div class="todo">
+  <div class="titulo">
+    <h3>Creación/edición de productos</h3>
+  </div>
+  <div class="cuestionario">
+    <div>
+      <input
+        type="text"
+        placeholder="Nombre del producto"
+        [(ngModel)]="product.name"
+      />
+    </div>
+    <div>
+      <input type="text" placeholder="Precio" [(ngModel)]="product.price" />
+    </div>
+    <div>
+      <input
+        type="text"
+        placeholder="Talla"
+        [(ngModel)]="product.size"
+      />
+    </div>
+    <div>
+      <input
+      type="text"
+      placeholder="Color"
+      [(ngModel)]="product.color"
+    />
+    <div>
+    <input
+    type="text"
+    placeholder="material"
+    [(ngModel)]="product.material"
+  ></div>
+    <div>
+      <input
+        type="text"
+        placeholder="Ruta de la imagen"
+        [(ngModel)]="product.image"
+      />
+    </div>
+    </div>
+  </div>
+  <div class="boton">
+    <button (click)="modificarProducto()">Editar</button>
+    <button (click)="deleteProducto()">Borrar</button>
+  </div>
+</div>
+<div class="pre">
+  <p>{{ product.name }}</p>
+  <p>{{ product.price }}</p>
+  <p>{{ product.size }}</p>
+  <p>{{ product.color}}</p>
+  <p>{{ product.material }}</p>
+  <img src="{{ product.image }}" alt="{{ product.name }}" />
+</div>
+  

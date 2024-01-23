@@ -1,24 +1,6 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "Camiseta Puma",
-      "price": 19.99,
-      "size": "S",
-      "color": "Rojo",
-      "material": "Algodón",
-      "image": "https://cdn.deporvillage.com/cdn-cgi/image/h=576,w=576,dpr=1,f=auto,q=75,fit=contain,background=white/product/pum-84877001_001.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Camiseta Adidas",
-      "price": 22.99,
-      "size": "M",
-      "color": "Azul",
-      "material": "Poliéster",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ563W3uLO4ORQ-LobuqG97pdZPXiqE16rm5iDpzJEwNUdSe9gQ4LsEmrf5twtATGJ9zYo&usqp=CAU"
-    },
-    {
       "id": "3",
       "name": "Sudadera Nike",
       "price": 39.99,
@@ -181,6 +163,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JlDN-mIC98VjiG0twNtx1d7VIXeAk4iOXw&usqp=CAU"
     },
     {
+
       "id": "5955",
       "name": "Air Jordan",
       "price": "123",
@@ -215,6 +198,16 @@
       "color": "rosa",
       "material": "adfadsfad",
       "image": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Princess-Carolyn.Bojack-Horseman.webp"
+
+      "id": "c935",
+      "name": "zapato fluchos",
+      "price": "20",
+      "size": "",
+      "color": "",
+      "material": "",
+      "image": "https://mundotextil.com/tienda/61-large_default/zapato-fluchos-sin-cordones-8902.jpg",
+      "description": "Cuero"
+
     }
   ]
 }
