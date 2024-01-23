@@ -9,8 +9,17 @@ export class ServiceService {
   public productsUrl: string =`${this.baseUrl}/`
 
   constructor(private http:HttpClient) { }
+  
   public getProducts(){
     return this.http.get(this.productsUrl)
   }
- 
+
+  public postProducto(product: any) {
+    return this.http.post(this.productsUrl, product);
+  }
+  public deleteProducto(id: string) {
+    return this.http.delete(`${this.productsUrl}${id}`);
+
+
+}
 }
