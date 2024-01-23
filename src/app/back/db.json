@@ -197,6 +197,24 @@
       "color": "Azul",
       "material": "Algodón",
       "image": "https://equipadosport.es/97-home_default/1-camiseta-oficial-supercopa-de-espana.jpg"
+    },
+    {
+      "id": "702d",
+      "name": "Robotito",
+      "price": "90",
+      "size": "XL",
+      "color": "Azul",
+      "material": "Metal",
+      "image": "https://solectroshop.com/8277-large_default/tobbie-el-robot-montable-inteligente-ksr18-juguete-educativo.jpg"
+    },
+    {
+      "id": "5caa",
+      "name": "Princess Carolyn",
+      "price": "45",
+      "size": "M",
+      "color": "rosa",
+      "material": "adfadsfad",
+      "image": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Princess-Carolyn.Bojack-Horseman.webp"
     }
   ]
 }
