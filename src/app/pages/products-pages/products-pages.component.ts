@@ -10,13 +10,12 @@ import { FormsModule, NgModel } from '@angular/forms';
 @Component({
   selector: 'app-products-pages',
   standalone: true,
-<<<<<<< HEAD
-  imports: [RouterLink,GestionPagesComponent,FormsModule,],
-=======
 
-  imports: [RouterLink,GestionPagesComponent],
 
->>>>>>> e187924f714cf8c5195d093e0dae00b6fe8c2673
+
+  imports: [RouterLink,GestionPagesComponent, FormsModule],
+
+
   templateUrl: './products-pages.component.html',
   styleUrl: './products-pages.component.css'
 })
@@ -52,7 +51,6 @@ this.servicio.getProducts().subscribe((data:any)=>{
 }
 
 
-  
 
 
  searchProduct: any =  '';
@@ -67,9 +65,6 @@ this.productsList = this.productsList.filter( (product: any) =>
 
 
  }
-
-
-
 
 }
 
