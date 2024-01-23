@@ -136,8 +136,8 @@
       "material": "Lana",
       "image": "https://santacana.es/894-thickbox_default/gorro-de-lana-y-cashmere-st-lcg-20.jpg"
     },
-    {
-      "id": "5955",
+
+    {"id": "5955",
       "name": "Air Jordan",
       "price": "123",
       "size": "48",
@@ -163,14 +163,6 @@
       "material": "Sintético",
       "image": "https://cdna.lystit.com/photos/uniqlo/854931ac/uniqlo--Bolso-Pequeno-Redondo.jpeg"
     },
-    {
-      "id": "74d1",
-      "name": "Sombrero de copa",
-      "price": "100",
-      "size": "Única",
-      "color": "Negro",
-      "material": "Sintético",
-      "image": "https://m.media-amazon.com/images/I/31oPleY7VIL._AC_UY1000_.jpg"
-    }
+
   ]
 }

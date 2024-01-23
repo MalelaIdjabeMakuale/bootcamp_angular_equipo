@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, } from '@angular/core';
 import { Iproducts } from '../../interfaces/iproducts';
 import { ServiceService } from '../../services/service.service';
 
@@ -11,7 +11,10 @@ import { FormsModule, NgModel } from '@angular/forms';
   selector: 'app-products-pages',
   standalone: true,
 
+
+
   imports: [RouterLink,GestionPagesComponent, FormsModule],
+
 
   templateUrl: './products-pages.component.html',
   styleUrl: './products-pages.component.css'
@@ -34,17 +37,18 @@ export class ProductsPagesComponent {
 
 constructor(private servicio:ServiceService){}
 
+
 ngOnInit():void{
 this.servicio.getProducts().subscribe((data:any)=>{
 this.productsList = data
 })
+
 this.servicio.getProducts().subscribe((data:any)=>{
   this.productsLists = data
 })
 
 
 }
-
 
 
 
@@ -61,4 +65,7 @@ this.productsList = this.productsList.filter( (product: any) =>
 
 
  }
+
 }
+
+
