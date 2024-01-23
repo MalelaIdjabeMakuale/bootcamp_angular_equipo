@@ -1,4 +1,4 @@
-<div class="todo">
+<!-- <div class="todo">
   <div class="titulo">
     <h3>Creación/edición de productos</h3>
   </div>
@@ -12,6 +12,7 @@
     </div>
     <div>
       <input type="text" placeholder="Precio" [(ngModel)]="product.price" />
+      <span class="text-2xl leading-none align-baseline">€</span>
     </div>
     <div>
       <input
@@ -54,4 +55,165 @@
   <p>{{ product.material }}</p>
   <img src="{{ product.image }}" alt="{{ product.name }}" />
 </div>
+   -->
+<!-- 
+<div class="min-w-screen min-h-screen bg-yellow-300 flex items-center p-5 lg:p-10 overflow-hidden relative">
+  <div class="w-full max-w-6xl rounded bg-white shadow-xl p-10 lg:p-20 mx-auto text-gray-800 relative md:text-left">
+      <div class="md:flex items-center -mx-10">
+          <div class="w-full md:w-1/2 px-10 mb-10 md:mb-0">
+              <div class="relative">
+                 
+                  <div class="border-4 border-yellow-200 absolute top-10 bottom-10 left-10 right-10 z-0"></div>
+              </div>
+          </div>
+          <div class="w-full py-2 md:w-1/2 px-10">
+            <div class="mb-10">
+              <div>
+                <input
+                type="text"
+                placeholder="Ruta de la imagen"
+                [(ngModel)]="product.image"
+              />
+              </div>
+
+              <div class="mb-10">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Nombre del producto"
+                    [(ngModel)]="product.name"
+                  />
+                </div>
+                <input
+                type="text"
+                placeholder="material"
+                [(ngModel)]="product.material"
+              >
+                  <input
+                  type="text"
+                  placeholder="Color"
+                  [(ngModel)]="product.color"
+                />
+                  <input
+        type="text"
+        placeholder="Talla"
+        [(ngModel)]="product.size"
+      />
+              </div>
+              <div>
+                  <div class="inline-block align-bottom mr-5">
+                      
+                    <div>
+                      <input type="text" placeholder="Precio" [(ngModel)]="product.price" />
+                      <span class="text-2xl leading-none align-baseline">€</span>
+                    </div>
+                      
+                  </div>
+                  <div class="inline-block align-bottom">
+                      <button (click)="modificarProducto()" class="bg-yellow-300 opacity-75 hover:opacity-100 text-yellow-900 hover:text-gray-900 rounded-full px-10 py-2 font-semibold"><i class="mdi mdi-cart -ml-2 mr-2"></i> Editar</button>
+
+                      <button (click)="deleteProducto()" class="bg-yellow-300 opacity-75 hover:opacity-100 text-yellow-900 hover:text-gray-900 rounded-full px-10 py-2 font-semibold"><i class="mdi mdi-cart -ml-2 mr-2"></i> Borrar</button>
+                  </div>
+                  <div class=" mt-0 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg md:mr-40 ml-auto">
+                    <img class="h-48 w-full object-cover object-center" src="{{ product.image }}" alt="Product Image" />
+                    <div class="p-4">
+                      <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">{{ product.name }}</h2>
+                      <p class="mb-2 text-base dark:text-gray-300 text-gray-700">Material: {{ product.material }}</p>
+                      <p class="mb-2 text-base dark:text-gray-300 text-gray-700">Color: {{ product.color}}</p>
+                      <div class="flex items-center">
+                        <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white">{{ product.price }}€</p>
+                        <p class="ml-auto text-base font-medium text-green-500">{{product.size}}</p>
+                      </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div> -->
+
+
+<!-- DEFINITIVA  -->
+<div class="flex">
+  <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden my-10">
+    <div class="px-4 py-2">
+      <input
+      type="text"
+      placeholder="Nombre del producto"
+      [(ngModel)]="product.name"
+      placeholder="Nombre del producto"
+      class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+      required
+    />
+    <input
+    type="text"
+    placeholder="Precio"
+    [(ngModel)]="product.price"
+    placeholder="€"
+
+    class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+    required
+  />
+  <input
+  type="text"
+  placeholder="Talla"
+  [(ngModel)]="product.size"
+  placeholder="Talla"
+  class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+  required
+/>
+<input
+type="text"
+[(ngModel)]="product.color"
+placeholder="Color"
+class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+required
+/>
+<input
+type="text"
+
+[(ngModel)]="product.material"
+placeholder="Material del producto"
+class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+required
+/>
+<input
+type="text"
+placeholder="Ruta de la imagen"
+[(ngModel)]="product.image"
+placeholder="Inserte ruta de la imagen"
+class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+required
+/>
+    </div>
+    <img class="h-56 w-full object-cover mt-2" src="{{product.image}}" alt="La imagen será previsualizada cuando se inserte la ruta">
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+     
+      <button (click)="modificarProducto()" class="px-3 py-1 bg-gray-200 text-sm text-gray-900 font-semibold rounded">Guardar</button>
+      <button (click)="deleteProducto()" class="px-3 py-1 bg-gray-200 text-sm text-gray-900 font-semibold rounded hover:bg-red-500 hover:text-white">Eliminar</button>
+
+      
+
+    </div>
+  </div>
   
+  <!-- vista previa -->
+  <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden my-10">
+    <div class="px-4 py-2">
+      <h1 class="text-gray-900 font-bold text-3xl uppercase">{{ product.name }}</h1>
+      <div>
+        <p class="text-gray-600 text-sm mt-1">{{ product.material }}</p>
+      </div>
+      <div>
+        <p class="text-gray-600 text-sm mt-1">{{ product.size }}</p>
+      </div>
+     <div><p class="text-gray-600 text-sm mt-1">{{ product.color }}</p></div>
+      <div> <p class="text-gray-600 text-sm mt-1">{{ product.price}}€</p></div>
+     
+    </div>
+    <img class="h-56 w-full object-cover mt-2" src="{{product.image}}" alt="La imagen será previsualizada cuando se inserte la ruta">
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+      
+    </div>
+</div>
+
+</div>
+

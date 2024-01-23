@@ -48,13 +48,15 @@
                   <h1 class="text-lg font-bold text-white">{{product.name}}</h1>
 
                   <h2 class="text-m font-light text-gray-200">{{product.price}} €</h2>
-=======
-                  <h2 class="text-m font-light text-gray-200">{{product.price}}</h2>
-                  <button routerLink="/gestion/{{product.id}}">Editar</button>
 
+                  <button routerLink="/productos/{{product.id}}">Más Información</button>
+                  
+                
                 </div>
+
+               
               </div>
-            
+              <button routerLink="/gestion/{{product.id}}">Editar</button>            
 
               <div
                 class="invisible h-auto max-h-0 p-5 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
