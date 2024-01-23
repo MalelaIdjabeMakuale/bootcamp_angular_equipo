@@ -45,15 +45,7 @@
       "material": "Denim",
       "image": "https://lsco.scene7.com/is/image/lsco/125010476-front-pdp?fmt=jpeg&qlt=70&resMode=bisharp&fit=crop,0&op_usm=0.6,0.6,8&wid=1120&hei=1494&cropN=0,0.35,1,0.65"
     },
-    {
-      "id": "8",
-      "name": "Falda Floral",
-      "price": 29.99,
-      "size": "M",
-      "color": "Flores",
-      "material": "Algodón",
-      "image": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1014542872.jpg?crop=0.308xw:0.467xh;0.328xw,0.281xh&resize=2048:*"
-    },
+    
     {
       "id": "9",
       "name": "Chaqueta de Cuero",

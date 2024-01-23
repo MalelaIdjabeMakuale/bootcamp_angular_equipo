@@ -31,15 +31,15 @@
 }
 
 body{
-    font-size: 13px;
+    font-size: 10px;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    margin-bottom: 60vh;
+    margin-bottom: 260vh;
 }
 
 h1{
-font-weight: 600;
+font-weight: 300;
 }
 
 h2,p{
-font-weight: 500;
+font-size: 14px;
 }
