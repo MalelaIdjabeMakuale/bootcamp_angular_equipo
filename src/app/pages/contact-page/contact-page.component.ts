@@ -1,3 +1,4 @@
+import { FilterComponent } from './../../components/filter/filter.component';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FormErrorsComponent } from '../../components/form-errors/form-errors.component';
@@ -5,7 +6,7 @@ import { FormErrorsComponent } from '../../components/form-errors/form-errors.co
 @Component({
   selector: 'app-contact-page',
   standalone: true,
-  imports: [FormErrorsComponent, ReactiveFormsModule],
+  imports: [FilterComponent, FormErrorsComponent, ReactiveFormsModule],
   templateUrl: './contact-page.component.html',
   styleUrl: './contact-page.component.scss'
 })

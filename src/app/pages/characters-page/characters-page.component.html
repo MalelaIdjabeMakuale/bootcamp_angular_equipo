@@ -1,0 +1,5 @@
+<div class="mb-6">
+  <app-filter (filterEmitter)="getCharacters(1, $event)"></app-filter>
+</div>
+<app-gallery [list]="characters"></app-gallery>
+<app-paginator (changePageEmitter)="getCharacters($event, filters)"></app-paginator>
