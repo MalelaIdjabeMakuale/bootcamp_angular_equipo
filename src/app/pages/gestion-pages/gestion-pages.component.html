@@ -1,56 +1,148 @@
-<div class="todo">
-  <div class="titulo">
-    <h3>Creación/edición de productos</h3>
+
+
+<div class="gestion">
+
+  <div class="formulario">
+    <div>
+      <div class="w-11/12 p-12 bg-white sm:w-8/12 md:w-1/2 lg:w-5/12">
+        <h1 class="text-xl font-semibold">
+          Creación y edición de productos
+          <span class="font-normal"
+            >Rellena con la información necesaria para continuar</span
+          >
+        </h1>
+    
+        <div class="flex justify-between gap-3">
+          <span class="w-1/2">
+            <label
+              for="firstname"
+              class="block text-xs font-semibold text-gray-600 uppercase"
+              >Producto</label
+            >
+            <input
+              type="text"
+              placeholder="Nombre del producto"
+              [(ngModel)]="product.name"
+              placeholder="Nombre del producto"
+              class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+              required
+            />
+          </span>
+          <span class="w-1/2">
+            <label
+              for="lastname"
+              class="block text-xs font-semibold text-gray-600 uppercase"
+              >Precio</label
+            >
+            <input
+              type="text"
+              placeholder="Precio"
+              [(ngModel)]="product.price"
+              placeholder="€"
+    
+              class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+              required
+            />
+          </span>
+        </div>
+        <div class="flex justify-between gap-3">
+          <span class="w-1/2">
+            <label
+              for="firstname"
+              class="block text-xs font-semibold text-gray-600 uppercase"
+              >Talla</label
+            >
+            <input
+              type="text"
+              placeholder="Talla"
+              [(ngModel)]="product.size"
+              placeholder="Talla"
+              class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+              required
+            />
+          </span>
+          <span class="w-1/2">
+            <label
+              for="lastname"
+              class="block text-xs font-semibold text-gray-600 uppercase"
+              >Color</label
+            >
+            <input
+              type="text"
+              [(ngModel)]="product.color"
+              placeholder="Color"
+              class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+              required
+            />
+          </span>
+        </div>
+        <label
+          for="Material"
+          class="block mt-2 text-xs font-semibold text-gray-600 uppercase"
+          >Material del producto</label
+        >
+        <input
+          type="text"
+      
+          [(ngModel)]="product.material"
+          placeholder="Material del producto"
+          class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+          required
+        />
+        <label
+          for="password"
+          class="block mt-2 text-xs font-semibold text-gray-600 uppercase"
+          >Imagen</label
+        >
+        <input
+          type="text"
+          placeholder="Ruta de la imagen"
+          [(ngModel)]="product.image"
+          placeholder="Inserte ruta de la imagen"
+          autocomplete="new-password"
+          class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+          required
+        />
+    
+        <div>
+          <button
+            class="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none"
+            (click)="addProducto()"
+          >
+            Guardar
+          </button>
+          <button
+            class="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none"
+            (click)="deleteProducto()"
+          >
+            Borrar
+          </button>
+        </div>
+      </div>
   </div>
-  <div class="cuestionario">
-    <div>
-      <input
-        type="text"
-        placeholder="Nombre del producto"
-        [(ngModel)]="product.name"
-      />
+  
+  
+    <!-- <div class="pre">
+      <p>{{ product.name }}</p>
+      <p>{{ product.price }}</p>
+      <p>{{ product.size }}</p>
+      <p>{{ product.color }}</p>
+      <p>{{ product.material }}</p>
+      <img src="{{ product.image }}" />
+    </div> -->
+    <div class=" mt-0 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg md:mr-40 ml-auto">
+      <img class="h-48 w-full object-cover object-center" src="{{ product.image }}" alt="Product Image" />
+      <div class="p-4">
+        <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">{{ product.name }}</h2>
+        <p class="mb-2 text-base dark:text-gray-300 text-gray-700">Material: {{ product.material }}</p>
+        <p class="mb-2 text-base dark:text-gray-300 text-gray-700">Color: {{ product.color}}</p>
+        <div class="flex items-center">
+          <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white">{{ product.price }}€</p>
+          <p class="ml-auto text-base font-medium text-green-500">{{product.size}}</p>
+        </div>
+      </div>
     </div>
-    <div>
-      <input type="text" placeholder="Precio" [(ngModel)]="product.price" />
-    </div>
-    <div>
-      <input
-        type="text"
-        placeholder="Talla"
-        [(ngModel)]="product.size"
-      />
-    </div>
-    <div>
-      <input
-      type="text"
-      placeholder="Color"
-      [(ngModel)]="product.color"
-    />
-    <div>
-    <input
-    type="text"
-    placeholder="material"
-    [(ngModel)]="product.material"
-  ></div>
-    <div>
-      <input
-        type="text"
-        placeholder="Ruta de la imagen"
-        [(ngModel)]="product.image"
-      />
-    </div>
-    </div>
-  </div>
-  <div class="boton">
-    <button (click)="addProducto()">Guardar</button>
-    <!-- <button (click)="deleteProducto()">Borrar</button> -->
-  </div>
-</div>
-<div class="pre">
-  <p>{{ product.name }}</p>
-  <p>{{ product.price }}</p>
-  <p>{{ product.size }}</p>
-  <p>{{ product.color}}</p>
-  <p>{{ product.material }}</p>
-  <img src="{{ product.image }}" alt="{{ product.name }}" />
-</div>
+
+
+
+

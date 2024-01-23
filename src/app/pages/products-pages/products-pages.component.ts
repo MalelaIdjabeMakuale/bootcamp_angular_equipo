@@ -1,14 +1,22 @@
 import { Component, } from '@angular/core';
 import { Iproducts } from '../../interfaces/iproducts';
 import { ServiceService } from '../../services/service.service';
+
 import { RouterLink } from '@angular/router';
 import { GestionPagesComponent } from '../gestion-pages/gestion-pages.component';
 import { FormsModule, NgModel } from '@angular/forms';
 
+
 @Component({
   selector: 'app-products-pages',
   standalone: true,
+<<<<<<< HEAD
   imports: [RouterLink,GestionPagesComponent,FormsModule,],
+=======
+
+  imports: [RouterLink,GestionPagesComponent],
+
+>>>>>>> e187924f714cf8c5195d093e0dae00b6fe8c2673
   templateUrl: './products-pages.component.html',
   styleUrl: './products-pages.component.css'
 })
