@@ -1,0 +1,17 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+  .gestion {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .formulario {
+    flex: 1;
+  }
+

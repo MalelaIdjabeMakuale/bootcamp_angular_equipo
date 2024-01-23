@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { Iproducts } from '../../interfaces/iproducts';
 import { ServiceService } from '../../services/service.service';
+
 import { RouterLink } from '@angular/router';
 import { GestionPagesComponent } from '../gestion-pages/gestion-pages.component';
+
 
 @Component({
   selector: 'app-products-pages',
   standalone: true,
+
   imports: [RouterLink,GestionPagesComponent],
+
   templateUrl: './products-pages.component.html',
   styleUrl: './products-pages.component.css'
 })

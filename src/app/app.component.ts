@@ -10,7 +10,8 @@ import { DetalleComponent } from './components/detalle/detalle.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule,FooterCoreComponent,HeaderCoreComponent, RouterOutlet, DetalleComponent,],
+
+  imports: [CommonModule,FooterCoreComponent,HeaderCoreComponent, RouterOutlet, DetalleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
